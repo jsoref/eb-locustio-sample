@@ -69,7 +69,7 @@ def main
     end
 
     # write the .foreman file with zero master processes and number of cores
-    # available follower proceses
+    # available follower processes
     File.open('.foreman', "w") { |f| f.print "concurrency: locust-master=0,locust-follower=#{num_cores}" }
   end
 
